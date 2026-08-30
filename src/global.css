@@ -1,0 +1,146 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   AutoVanta · Obsidian + Racing Crimson
+   Tailwind v4 (CSS-first) + DaisyUI 5 custom theme
+--------------------------------------------------------------------------- */
+
+@plugin 'daisyui' {
+  themes: false;
+}
+
+@plugin 'daisyui/theme' {
+  name: 'autovanta';
+  default: true;
+  color-scheme: dark;
+
+  --color-base-100: #0a0a0c;
+  --color-base-200: #101014;
+  --color-base-300: #17171d;
+  --color-base-content: #f4f4f5;
+
+  --color-primary: #b31217;
+  --color-primary-content: #ffffff;
+  /* Accessible red for TEXT/ICONS on dark surfaces (WCAG AA).
+     #b31217 only reaches 2.8:1 as small text; this coral-red passes 4.5:1
+     on base-100, base-200 and primary/15 chips alike. */
+  --color-primary-text: #e86862;
+  /* Error red for text sitting on error/10 tinted backgrounds. */
+  --color-error-text: #ff7a7a;
+
+  --color-secondary: #c7c9d1;
+  --color-secondary-content: #0b0b0e;
+
+  --color-accent: #3d3f46;
+  --color-accent-content: #f4f4f5;
+
+  --color-neutral: #050506;
+  --color-neutral-content: #a1a1aa;
+
+  --color-info: #4fa3ff;
+  --color-info-content: #04121f;
+  --color-success: #2fd06f;
+  --color-success-content: #04160a;
+  --color-warning: #f5b301;
+  --color-warning-content: #211300;
+  --color-error: #ff4d4d;
+  --color-error-content: #2b0303;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.625rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Space Grotesk Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', 'Menlo', monospace;
+
+  --color-muted: #9c9ca6;
+  --color-carbon: #050506;
+}
+
+@layer base {
+  html {
+    scrollbar-color: #2a2a31 #0a0a0c;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply bg-base-100 font-sans text-base-content antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: #b31217;
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid #e86862;
+    outline-offset: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0c;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #26262e;
+    border-radius: 8px;
+    border: 2px solid #0a0a0c;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3a44;
+  }
+}
+
+/* Layout & texture helpers */
+@utility container-x {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-inline: 1rem;
+
+  @media (width >= 40rem) {
+    padding-inline: 1.5rem;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 2rem;
+  }
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.045) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+
+@utility text-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
