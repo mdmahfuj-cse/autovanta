@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import SectionHeading from '../../components/shared/SectionHeading.jsx';
 import { Stagger, StaggerItem } from '../../components/shared/Stagger.jsx';
 import Reveal from '../../components/shared/Reveal.jsx';
-import { CATEGORIES, CATEGORY_COUNTS } from '../../data/index.js';
+import { CATEGORIES, CATEGORY_COUNTS, CARS } from '../../data/index.js';
 import { PATHS_EXPORTS } from './homeLinks.js';
 import { cn } from '../../utils/cn.js';
 
@@ -56,7 +56,7 @@ export default function CategoryMosaic() {
             to="/cars"
             className="group flex h-full min-h-40 flex-col justify-between rounded-xl border border-white/15 bg-gradient-to-br from-primary/10 via-base-200 to-base-200 p-5 transition-colors duration-300 hover:border-white/30"
           >
-            <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">36 vehicles</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">{CARS.length.toString().padStart(2, '0')} vehicles</span>
             <span>
               <span className="block font-display text-lg font-bold leading-tight tracking-tight">
                 The full
