@@ -11,7 +11,11 @@ const ComparePage = lazy(() => import('../pages/ComparePage.jsx'));
 const WishlistPage = lazy(() => import('../pages/WishlistPage.jsx'));
 const ServicesPage = lazy(() => import('../pages/ServicesPage.jsx'));
 const ServiceDetailsPage = lazy(() => import('../pages/ServiceDetailsPage.jsx'));
-
+const FinancePage = lazy(() => import('../pages/FinancePage.jsx'));
+const TestDrivePage = lazy(() => import('../pages/TestDrivePage.jsx'));
+const JournalPage = lazy(() => import('../pages/JournalPage.jsx'));
+const ArticlePage = lazy(() => import('../pages/ArticlePage.jsx'));
+const AboutPage = lazy(() => import('../pages/AboutPage.jsx'));
 const ContactPage = lazy(() => import('../pages/ContactPage.jsx'));
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage.jsx'));
 
