@@ -45,7 +45,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats band */}
-
+      <section className="border-b border-white/8" aria-label="Company statistics">
         <div className="container-x grid grid-cols-2 gap-8 py-12 lg:grid-cols-4">
           {STORY_STATS.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 0.06}>
