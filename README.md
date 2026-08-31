@@ -10,7 +10,7 @@ A production-quality, **frontend-only** automotive showroom & marketplace experi
 
 ```bash
 npm install         # install dependencies
-npm run dev         # start dev server 
+npm run dev         # start dev server (http://localhost:5173)
 npm run build       # production build
 npm run preview     # preview production build
 npm run lint        # eslint validation
