@@ -30,7 +30,10 @@ export default function AboutPage() {
           </h1>
           <div className="mt-8 max-w-3xl space-y-5 leading-relaxed text-muted">
             <p>
-
+              AutoVanta started in 2019 with three cars, one garage bay in Chattogram and a
+              stubborn idea: buying a premium vehicle in Bangladesh should feel as considered as
+              the machines themselves — transparent pricing, honest inspection reports and a
+              floor that respects your intelligence.
             </p>
             <p>
               Six years later we operate three showrooms, a 12-bay workshop and a detail studio,
