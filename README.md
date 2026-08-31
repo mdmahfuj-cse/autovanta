@@ -200,24 +200,7 @@ autovanta/
 
 ## 🛣 Routing Map
 
-| Path              | Page               | Features                                                                                                   |
-| ----------------- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
-| `/`               | HomePage           | 14-section cinematic scroll experience                                                                     |
-| `/cars`           | CarsPage           | Search · filters (brand, category, price, fuel, transmission) · sort · grid/list toggle · URL-synced state |
-| `/cars/:slug`     | CarDetailsPage     | Gallery, specs, performance, features, color picker, finance estimate, actions                             |
-| `/brands`         | BrandsPage         | Brand directory with marks, names, vehicle counts, featured models                                         |
-| `/brands/:slug`   | BrandDetailsPage   | Brand hero + filtered catalogue (reuses car feature)                                                       |
-| `/compare`        | ComparePage        | 2–4 car comparison with difference highlighting · mobile carousel                                          |
-| `/wishlist`       | WishlistPage       | Saved cars · bulk compare · empty state CTA                                                                |
-| `/services`       | ServicesPage       | 8 service offerings with details                                                                           |
-| `/services/:slug` | ServiceDetailsPage | Deep service details + booking CTA                                                                         |
-| `/finance`        | FinancePage        | EMI calculator with breakdown chart · shareable via `?price=`                                              |
-| `/test-drive`     | TestDrivePage      | RHF + Zod booking form · saved bookings list · confirmation                                                |
-| `/journal`        | JournalPage        | Article cards · search · 6 category filters                                                                |
-| `/journal/:slug`  | ArticlePage        | Rich article layout with related articles                                                                  |
-| `/about`          | AboutPage          | Company story · stats with CountUp · team grid · showroom info                                             |
-| `/contact`        | ContactPage        | Showroom cards · map placeholders · hours · contact form                                                   |
-| `*`               | NotFoundPage       | Custom 404 with recovery links                                                                             |
+                                                                         |
 
 **Route Behavior:**
 
