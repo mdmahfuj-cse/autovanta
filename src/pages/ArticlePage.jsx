@@ -12,7 +12,19 @@ import { formatDate } from '../utils/format.js';
 
 function ArticleNotFound() {
   return (
-
+    <PageTransition className="container-x flex min-h-[70vh] flex-col items-center justify-center py-32 text-center">
+      <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/10 bg-base-200">
+        <Newspaper className="h-7 w-7 text-muted" aria-hidden="true" />
+      </span>
+      <h1 className="mt-6 font-display text-3xl font-bold tracking-tight">Story not found.</h1>
+      <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
+        That page was never printed, or it has been moved to the archive. The latest issue is one
+        click away.
+      </p>
+      <Link to={PATHS.journal} className="btn btn-primary btn-md mt-8 rounded-md px-7 font-display tracking-wide">
+        Back to the journal <ArrowRight className="h-4 w-4" aria-hidden="true" />
+      </Link>
+    </PageTransition>
   );
 }
 
