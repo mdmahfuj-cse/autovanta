@@ -32,20 +32,7 @@ function AuthorCard({ article }) {
   const member = TEAM.find((m) => m.name === article.author);
 
   return (
-    <div className="flex items-start gap-4 rounded-xl border border-white/8 bg-base-200 p-6">
-      <span
-        aria-hidden="true"
-        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/15 bg-gradient-to-br from-white/[0.07] to-transparent font-display text-sm font-bold tracking-[0.12em]"
-      >
-        {member?.initials ?? article.author.split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase()}
-      </span>
-      <div>
-        <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">Written by</p>
-        <p className="mt-1 font-display text-base font-bold tracking-tight">{article.author}</p>
-        <p className="text-xs text-muted">{member?.role ?? 'Contributor'}</p>
-        {member?.focus && <p className="mt-2 text-sm leading-relaxed text-muted">{member.focus}</p>}
-      </div>
-    </div>
+
   );
 }
 
